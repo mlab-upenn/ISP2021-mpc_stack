@@ -1,6 +1,5 @@
 import numpy as np
-from structs import *
-from track import *
+
 from config import *
 from params import *
 
@@ -40,6 +39,7 @@ class Cost:
         dphi_ref * cos_phi_ref * (y_curr - y_ref) + sin_phi_ref * dy_ref
 
         d_e_cross = np.zeros((1,n_states))
+        # print(d_cross_track_err_X)
         d_e_cross[0,0] = d_cross_track_err_X
         d_e_cross[0,1] = d_cross_track_err_Y
         d_e_cross[0,7] = d_cross_track_err_s
@@ -62,7 +62,7 @@ class Cost:
             Q_lag_cost = self.param.Q_lag_N
 
         Q = Q_cross_cost * d_e_cross.T @ d_e_cross + Q_lag_cost * d_e_lag.T @ d_e_lag
-        q = Q_cross_cost * 2 * (cross_track_err - d_e_cross @ x.to_vec) * d_e_cross + Q_lag_cost * 2 * (lag_err - d_e_lag @ x.to_vec) * d_e_lag
+        q = Q_cross_cost * 2 * (cross_track_err - d_e_cross @ x.to_vec()) * d_e_cross + Q_lag_cost * 2 * (lag_err - d_e_lag @ x.to_vec()) * d_e_lag
         return Q,q
 
     def get_input_cost(self):
@@ -85,6 +85,8 @@ class Cost:
         q_progress = self.get_progress_cost()
 
         Q_total = Q_track
+        # Making it symmetric 
+        Q_total = (Q_total + Q_total.T)/2
         q_total = q_track + q_progress
 
-        return Q_total, q_total, R
+        return Q_total, q_total.T, R

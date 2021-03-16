@@ -1,0 +1,1517 @@
+Model {
+  Name			  "mpcc"
+  Version		  8.0
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.2"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [385.0, 84.0, 816.0, 539.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[569.0, 363.0]
+	ZoomFactor		[1.0]
+	Offset			[0.0, 0.0]
+      }
+    }
+  }
+  Created		  "3/15/2021 7:06:12 PM"
+  Creator		  "embotech AG"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "embotech AG"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "3/15/2021 7:06:12 PM"
+  RTWModifiedTimeStamp	  315310195
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    6
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "model_2012b"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "model_2012b"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      7
+      Version		      "1.12.1"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  8
+	  Version		  "1.12.1"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  9
+	  Version		  "1.12.1"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  10
+	  Version		  "1.12.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  11
+	  Version		  "1.12.1"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  12
+	  Version		  "1.12.1"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  13
+	  Version		  "1.12.1"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  14
+	  Version		  "1.12.1"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  15
+	  Version		  "1.12.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    15
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      16
+	      Version		      "1.12.1"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Classic"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      17
+	      Version		      "1.12.1"
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 520, 225, 1400, 855 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    7
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    18
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+  }
+  System {
+    Name		    "mpcc"
+    Location		    [385, 84, 1201, 623]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "1"
+    Block {
+      BlockType		      S-Function
+      Name		      "mpcc"
+      SID		      "1"
+      Ports		      [349, 1]
+      Position		      [170, 99, 650, 5933]
+      ZOrder		      1
+      FunctionName	      "mpcc_simulinkBlock"
+	  SFunctionModules	      "mpcc mpcc_simulinkBlock"
+      EnableBusSupport	      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		19
+	$ClassName		"Simulink.Mask"
+	Type			"mpcc_simulinkBlock"
+	Description		" ---- Simulink block encapsulating your customized solver mpcc ---- \n\n"
+				"mpcc : A fast customized optimization solver.\n"
+"\n"
+"Copyright (C) 2013-2021 EMBOTECH AG [info@embotech.com]. All rights reserved.\n"
+"\n"
+"\n"
+"This software is intended for simulation and testing purposes only. \n"
+"Use of this software for any commercial purpose is prohibited.\n"
+"\n"
+"This program is distributed in the hope that it will be useful.\n"
+"EMBOTECH makes NO WARRANTIES with respect to the use of the software \n"
+"without even the implied warranty of MERCHANTABILITY or FITNESS FOR A \n"
+"PARTICULAR PURPOSE. \n"
+"\n"
+"EMBOTECH shall not have any liability for any damage arising from the use\n"
+"of the software.\n"
+"\n"
+"This Agreement shall exclusively be governed by and interpreted in \n"
+"accordance with the laws of Switzerland, excluding its principles\n"
+"of conflict of laws. The Courts of Zurich-City shall have exclusive \n"
+"jurisdiction in case of any dispute.\n"
+"\n"
+
+	Help			"mpcc_simulinkBlock provides an easy Simulink interface for simulating your customized solver.  \n"
+	"\nOUTPUTS = mpcc(INPUTS) solves an optimization problem where:\n\n"
+	"INPUTS:\n"
+	" - H01 - matrix of size 14x14\n "
+" - H02 - matrix of size 14x14\n "
+" - H03 - matrix of size 14x14\n "
+" - H04 - matrix of size 14x14\n "
+" - H05 - matrix of size 14x14\n "
+" - H06 - matrix of size 14x14\n "
+" - H07 - matrix of size 14x14\n "
+" - H08 - matrix of size 14x14\n "
+" - H09 - matrix of size 14x14\n "
+" - H10 - matrix of size 14x14\n "
+" - H11 - matrix of size 14x14\n "
+" - H12 - matrix of size 14x14\n "
+" - H13 - matrix of size 14x14\n "
+" - H14 - matrix of size 14x14\n "
+" - H15 - matrix of size 14x14\n "
+" - H16 - matrix of size 14x14\n "
+" - H17 - matrix of size 14x14\n "
+" - H18 - matrix of size 14x14\n "
+" - H19 - matrix of size 14x14\n "
+" - H20 - matrix of size 14x14\n "
+" - H21 - matrix of size 14x14\n "
+" - H22 - matrix of size 14x14\n "
+" - H23 - matrix of size 14x14\n "
+" - H24 - matrix of size 14x14\n "
+" - H25 - matrix of size 14x14\n "
+" - H26 - matrix of size 14x14\n "
+" - H27 - matrix of size 14x14\n "
+" - H28 - matrix of size 14x14\n "
+" - H29 - matrix of size 14x14\n "
+" - H30 - matrix of size 14x14\n "
+" - H31 - matrix of size 14x14\n "
+" - H32 - matrix of size 14x14\n "
+" - H33 - matrix of size 14x14\n "
+" - H34 - matrix of size 14x14\n "
+" - H35 - matrix of size 14x14\n "
+" - H36 - matrix of size 14x14\n "
+" - H37 - matrix of size 14x14\n "
+" - H38 - matrix of size 14x14\n "
+" - H39 - matrix of size 14x14\n "
+" - H40 - matrix of size 14x14\n "
+" - H41 - matrix of size 14x14\n "
+" - H42 - matrix of size 14x14\n "
+" - H43 - matrix of size 14x14\n "
+" - H44 - matrix of size 14x14\n "
+" - H45 - matrix of size 14x14\n "
+" - H46 - matrix of size 14x14\n "
+" - H47 - matrix of size 14x14\n "
+" - H48 - matrix of size 14x14\n "
+" - H49 - matrix of size 14x14\n "
+" - H50 - matrix of size 14x14\n "
+" - f01 - column vector of length 14\n "
+" - f02 - column vector of length 14\n "
+" - f03 - column vector of length 14\n "
+" - f04 - column vector of length 14\n "
+" - f05 - column vector of length 14\n "
+" - f06 - column vector of length 14\n "
+" - f07 - column vector of length 14\n "
+" - f08 - column vector of length 14\n "
+" - f09 - column vector of length 14\n "
+" - f10 - column vector of length 14\n "
+" - f11 - column vector of length 14\n "
+" - f12 - column vector of length 14\n "
+" - f13 - column vector of length 14\n "
+" - f14 - column vector of length 14\n "
+" - f15 - column vector of length 14\n "
+" - f16 - column vector of length 14\n "
+" - f17 - column vector of length 14\n "
+" - f18 - column vector of length 14\n "
+" - f19 - column vector of length 14\n "
+" - f20 - column vector of length 14\n "
+" - f21 - column vector of length 14\n "
+" - f22 - column vector of length 14\n "
+" - f23 - column vector of length 14\n "
+" - f24 - column vector of length 14\n "
+" - f25 - column vector of length 14\n "
+" - f26 - column vector of length 14\n "
+" - f27 - column vector of length 14\n "
+" - f28 - column vector of length 14\n "
+" - f29 - column vector of length 14\n "
+" - f30 - column vector of length 14\n "
+" - f31 - column vector of length 14\n "
+" - f32 - column vector of length 14\n "
+" - f33 - column vector of length 14\n "
+" - f34 - column vector of length 14\n "
+" - f35 - column vector of length 14\n "
+" - f36 - column vector of length 14\n "
+" - f37 - column vector of length 14\n "
+" - f38 - column vector of length 14\n "
+" - f39 - column vector of length 14\n "
+" - f40 - column vector of length 14\n "
+" - f41 - column vector of length 14\n "
+" - f42 - column vector of length 14\n "
+" - f43 - column vector of length 14\n "
+" - f44 - column vector of length 14\n "
+" - f45 - column vector of length 14\n "
+" - f46 - column vector of length 14\n "
+" - f47 - column vector of length 14\n "
+" - f48 - column vector of length 14\n "
+" - f49 - column vector of length 14\n "
+" - f50 - column vector of length 14\n "
+" - A01 - matrix of size 2x14\n "
+" - A02 - matrix of size 2x14\n "
+" - A03 - matrix of size 2x14\n "
+" - A04 - matrix of size 2x14\n "
+" - A05 - matrix of size 2x14\n "
+" - A06 - matrix of size 2x14\n "
+" - A07 - matrix of size 2x14\n "
+" - A08 - matrix of size 2x14\n "
+" - A09 - matrix of size 2x14\n "
+" - A10 - matrix of size 2x14\n "
+" - A11 - matrix of size 2x14\n "
+" - A12 - matrix of size 2x14\n "
+" - A13 - matrix of size 2x14\n "
+" - A14 - matrix of size 2x14\n "
+" - A15 - matrix of size 2x14\n "
+" - A16 - matrix of size 2x14\n "
+" - A17 - matrix of size 2x14\n "
+" - A18 - matrix of size 2x14\n "
+" - A19 - matrix of size 2x14\n "
+" - A20 - matrix of size 2x14\n "
+" - A21 - matrix of size 2x14\n "
+" - A22 - matrix of size 2x14\n "
+" - A23 - matrix of size 2x14\n "
+" - A24 - matrix of size 2x14\n "
+" - A25 - matrix of size 2x14\n "
+" - A26 - matrix of size 2x14\n "
+" - A27 - matrix of size 2x14\n "
+" - A28 - matrix of size 2x14\n "
+" - A29 - matrix of size 2x14\n "
+" - A30 - matrix of size 2x14\n "
+" - A31 - matrix of size 2x14\n "
+" - A32 - matrix of size 2x14\n "
+" - A33 - matrix of size 2x14\n "
+" - A34 - matrix of size 2x14\n "
+" - A35 - matrix of size 2x14\n "
+" - A36 - matrix of size 2x14\n "
+" - A37 - matrix of size 2x14\n "
+" - A38 - matrix of size 2x14\n "
+" - A39 - matrix of size 2x14\n "
+" - A40 - matrix of size 2x14\n "
+" - A41 - matrix of size 2x14\n "
+" - A42 - matrix of size 2x14\n "
+" - A43 - matrix of size 2x14\n "
+" - A44 - matrix of size 2x14\n "
+" - A45 - matrix of size 2x14\n "
+" - A46 - matrix of size 2x14\n "
+" - A47 - matrix of size 2x14\n "
+" - A48 - matrix of size 2x14\n "
+" - A49 - matrix of size 2x14\n "
+" - A50 - matrix of size 2x14\n "
+" - b01 - column vector of length 2\n "
+" - b02 - column vector of length 2\n "
+" - b03 - column vector of length 2\n "
+" - b04 - column vector of length 2\n "
+" - b05 - column vector of length 2\n "
+" - b06 - column vector of length 2\n "
+" - b07 - column vector of length 2\n "
+" - b08 - column vector of length 2\n "
+" - b09 - column vector of length 2\n "
+" - b10 - column vector of length 2\n "
+" - b11 - column vector of length 2\n "
+" - b12 - column vector of length 2\n "
+" - b13 - column vector of length 2\n "
+" - b14 - column vector of length 2\n "
+" - b15 - column vector of length 2\n "
+" - b16 - column vector of length 2\n "
+" - b17 - column vector of length 2\n "
+" - b18 - column vector of length 2\n "
+" - b19 - column vector of length 2\n "
+" - b20 - column vector of length 2\n "
+" - b21 - column vector of length 2\n "
+" - b22 - column vector of length 2\n "
+" - b23 - column vector of length 2\n "
+" - b24 - column vector of length 2\n "
+" - b25 - column vector of length 2\n "
+" - b26 - column vector of length 2\n "
+" - b27 - column vector of length 2\n "
+" - b28 - column vector of length 2\n "
+" - b29 - column vector of length 2\n "
+" - b30 - column vector of length 2\n "
+" - b31 - column vector of length 2\n "
+" - b32 - column vector of length 2\n "
+" - b33 - column vector of length 2\n "
+" - b34 - column vector of length 2\n "
+" - b35 - column vector of length 2\n "
+" - b36 - column vector of length 2\n "
+" - b37 - column vector of length 2\n "
+" - b38 - column vector of length 2\n "
+" - b39 - column vector of length 2\n "
+" - b40 - column vector of length 2\n "
+" - b41 - column vector of length 2\n "
+" - b42 - column vector of length 2\n "
+" - b43 - column vector of length 2\n "
+" - b44 - column vector of length 2\n "
+" - b45 - column vector of length 2\n "
+" - b46 - column vector of length 2\n "
+" - b47 - column vector of length 2\n "
+" - b48 - column vector of length 2\n "
+" - b49 - column vector of length 2\n "
+" - b50 - column vector of length 2\n "
+" - C01 - matrix of size 11x14\n "
+" - C02 - matrix of size 11x14\n "
+" - C03 - matrix of size 11x14\n "
+" - C04 - matrix of size 11x14\n "
+" - C05 - matrix of size 11x14\n "
+" - C06 - matrix of size 11x14\n "
+" - C07 - matrix of size 11x14\n "
+" - C08 - matrix of size 11x14\n "
+" - C09 - matrix of size 11x14\n "
+" - C10 - matrix of size 11x14\n "
+" - C11 - matrix of size 11x14\n "
+" - C12 - matrix of size 11x14\n "
+" - C13 - matrix of size 11x14\n "
+" - C14 - matrix of size 11x14\n "
+" - C15 - matrix of size 11x14\n "
+" - C16 - matrix of size 11x14\n "
+" - C17 - matrix of size 11x14\n "
+" - C18 - matrix of size 11x14\n "
+" - C19 - matrix of size 11x14\n "
+" - C20 - matrix of size 11x14\n "
+" - C21 - matrix of size 11x14\n "
+" - C22 - matrix of size 11x14\n "
+" - C23 - matrix of size 11x14\n "
+" - C24 - matrix of size 11x14\n "
+" - C25 - matrix of size 11x14\n "
+" - C26 - matrix of size 11x14\n "
+" - C27 - matrix of size 11x14\n "
+" - C28 - matrix of size 11x14\n "
+" - C29 - matrix of size 11x14\n "
+" - C30 - matrix of size 11x14\n "
+" - C31 - matrix of size 11x14\n "
+" - C32 - matrix of size 11x14\n "
+" - C33 - matrix of size 11x14\n "
+" - C34 - matrix of size 11x14\n "
+" - C35 - matrix of size 11x14\n "
+" - C36 - matrix of size 11x14\n "
+" - C37 - matrix of size 11x14\n "
+" - C38 - matrix of size 11x14\n "
+" - C39 - matrix of size 11x14\n "
+" - C40 - matrix of size 11x14\n "
+" - C41 - matrix of size 11x14\n "
+" - C42 - matrix of size 11x14\n "
+" - C43 - matrix of size 11x14\n "
+" - C44 - matrix of size 11x14\n "
+" - C45 - matrix of size 11x14\n "
+" - C46 - matrix of size 11x14\n "
+" - C47 - matrix of size 11x14\n "
+" - C48 - matrix of size 11x14\n "
+" - C49 - matrix of size 11x14\n "
+" - D01 - matrix of size 11x14\n "
+" - D02 - matrix of size 11x14\n "
+" - D03 - matrix of size 11x14\n "
+" - D04 - matrix of size 11x14\n "
+" - D05 - matrix of size 11x14\n "
+" - D06 - matrix of size 11x14\n "
+" - D07 - matrix of size 11x14\n "
+" - D08 - matrix of size 11x14\n "
+" - D09 - matrix of size 11x14\n "
+" - D10 - matrix of size 11x14\n "
+" - D11 - matrix of size 11x14\n "
+" - D12 - matrix of size 11x14\n "
+" - D13 - matrix of size 11x14\n "
+" - D14 - matrix of size 11x14\n "
+" - D15 - matrix of size 11x14\n "
+" - D16 - matrix of size 11x14\n "
+" - D17 - matrix of size 11x14\n "
+" - D18 - matrix of size 11x14\n "
+" - D19 - matrix of size 11x14\n "
+" - D20 - matrix of size 11x14\n "
+" - D21 - matrix of size 11x14\n "
+" - D22 - matrix of size 11x14\n "
+" - D23 - matrix of size 11x14\n "
+" - D24 - matrix of size 11x14\n "
+" - D25 - matrix of size 11x14\n "
+" - D26 - matrix of size 11x14\n "
+" - D27 - matrix of size 11x14\n "
+" - D28 - matrix of size 11x14\n "
+" - D29 - matrix of size 11x14\n "
+" - D30 - matrix of size 11x14\n "
+" - D31 - matrix of size 11x14\n "
+" - D32 - matrix of size 11x14\n "
+" - D33 - matrix of size 11x14\n "
+" - D34 - matrix of size 11x14\n "
+" - D35 - matrix of size 11x14\n "
+" - D36 - matrix of size 11x14\n "
+" - D37 - matrix of size 11x14\n "
+" - D38 - matrix of size 11x14\n "
+" - D39 - matrix of size 11x14\n "
+" - D40 - matrix of size 11x14\n "
+" - D41 - matrix of size 11x14\n "
+" - D42 - matrix of size 11x14\n "
+" - D43 - matrix of size 11x14\n "
+" - D44 - matrix of size 11x14\n "
+" - D45 - matrix of size 11x14\n "
+" - D46 - matrix of size 11x14\n "
+" - D47 - matrix of size 11x14\n "
+" - D48 - matrix of size 11x14\n "
+" - D49 - matrix of size 11x14\n "
+" - D50 - matrix of size 11x14\n "
+" - c02 - column vector of length 11\n "
+" - c03 - column vector of length 11\n "
+" - c04 - column vector of length 11\n "
+" - c05 - column vector of length 11\n "
+" - c06 - column vector of length 11\n "
+" - c07 - column vector of length 11\n "
+" - c08 - column vector of length 11\n "
+" - c09 - column vector of length 11\n "
+" - c10 - column vector of length 11\n "
+" - c11 - column vector of length 11\n "
+" - c12 - column vector of length 11\n "
+" - c13 - column vector of length 11\n "
+" - c14 - column vector of length 11\n "
+" - c15 - column vector of length 11\n "
+" - c16 - column vector of length 11\n "
+" - c17 - column vector of length 11\n "
+" - c18 - column vector of length 11\n "
+" - c19 - column vector of length 11\n "
+" - c20 - column vector of length 11\n "
+" - c21 - column vector of length 11\n "
+" - c22 - column vector of length 11\n "
+" - c23 - column vector of length 11\n "
+" - c24 - column vector of length 11\n "
+" - c25 - column vector of length 11\n "
+" - c26 - column vector of length 11\n "
+" - c27 - column vector of length 11\n "
+" - c28 - column vector of length 11\n "
+" - c29 - column vector of length 11\n "
+" - c30 - column vector of length 11\n "
+" - c31 - column vector of length 11\n "
+" - c32 - column vector of length 11\n "
+" - c33 - column vector of length 11\n "
+" - c34 - column vector of length 11\n "
+" - c35 - column vector of length 11\n "
+" - c36 - column vector of length 11\n "
+" - c37 - column vector of length 11\n "
+" - c38 - column vector of length 11\n "
+" - c39 - column vector of length 11\n "
+" - c40 - column vector of length 11\n "
+" - c41 - column vector of length 11\n "
+" - c42 - column vector of length 11\n "
+" - c43 - column vector of length 11\n "
+" - c44 - column vector of length 11\n "
+" - c45 - column vector of length 11\n "
+" - c46 - column vector of length 11\n "
+" - c47 - column vector of length 11\n "
+" - c48 - column vector of length 11\n "
+" - c49 - column vector of length 11\n "
+" - c50 - column vector of length 11\n "
+" - minusA_times_x0 - column vector of length 11\n "
+
+	"\nOUTPUTS:\n"
+	" - u0 - column vector of length 700\n "
+
+	"\n For more information, see https://www.embotech.com/FORCES-Pro/How-to-use/Simulink-Interface/Simulink-Block \n "
+
+	Display			"port_label('input', 1, 'H01') \n  "
+"port_label('input', 2, 'H02') \n  "
+"port_label('input', 3, 'H03') \n  "
+"port_label('input', 4, 'H04') \n  "
+"port_label('input', 5, 'H05') \n  "
+"port_label('input', 6, 'H06') \n  "
+"port_label('input', 7, 'H07') \n  "
+"port_label('input', 8, 'H08') \n  "
+"port_label('input', 9, 'H09') \n  "
+"port_label('input', 10, 'H10') \n  "
+"port_label('input', 11, 'H11') \n  "
+"port_label('input', 12, 'H12') \n  "
+"port_label('input', 13, 'H13') \n  "
+"port_label('input', 14, 'H14') \n  "
+"port_label('input', 15, 'H15') \n  "
+"port_label('input', 16, 'H16') \n  "
+"port_label('input', 17, 'H17') \n  "
+"port_label('input', 18, 'H18') \n  "
+"port_label('input', 19, 'H19') \n  "
+"port_label('input', 20, 'H20') \n  "
+"port_label('input', 21, 'H21') \n  "
+"port_label('input', 22, 'H22') \n  "
+"port_label('input', 23, 'H23') \n  "
+"port_label('input', 24, 'H24') \n  "
+"port_label('input', 25, 'H25') \n  "
+"port_label('input', 26, 'H26') \n  "
+"port_label('input', 27, 'H27') \n  "
+"port_label('input', 28, 'H28') \n  "
+"port_label('input', 29, 'H29') \n  "
+"port_label('input', 30, 'H30') \n  "
+"port_label('input', 31, 'H31') \n  "
+"port_label('input', 32, 'H32') \n  "
+"port_label('input', 33, 'H33') \n  "
+"port_label('input', 34, 'H34') \n  "
+"port_label('input', 35, 'H35') \n  "
+"port_label('input', 36, 'H36') \n  "
+"port_label('input', 37, 'H37') \n  "
+"port_label('input', 38, 'H38') \n  "
+"port_label('input', 39, 'H39') \n  "
+"port_label('input', 40, 'H40') \n  "
+"port_label('input', 41, 'H41') \n  "
+"port_label('input', 42, 'H42') \n  "
+"port_label('input', 43, 'H43') \n  "
+"port_label('input', 44, 'H44') \n  "
+"port_label('input', 45, 'H45') \n  "
+"port_label('input', 46, 'H46') \n  "
+"port_label('input', 47, 'H47') \n  "
+"port_label('input', 48, 'H48') \n  "
+"port_label('input', 49, 'H49') \n  "
+"port_label('input', 50, 'H50') \n  "
+"port_label('input', 51, 'f01') \n  "
+"port_label('input', 52, 'f02') \n  "
+"port_label('input', 53, 'f03') \n  "
+"port_label('input', 54, 'f04') \n  "
+"port_label('input', 55, 'f05') \n  "
+"port_label('input', 56, 'f06') \n  "
+"port_label('input', 57, 'f07') \n  "
+"port_label('input', 58, 'f08') \n  "
+"port_label('input', 59, 'f09') \n  "
+"port_label('input', 60, 'f10') \n  "
+"port_label('input', 61, 'f11') \n  "
+"port_label('input', 62, 'f12') \n  "
+"port_label('input', 63, 'f13') \n  "
+"port_label('input', 64, 'f14') \n  "
+"port_label('input', 65, 'f15') \n  "
+"port_label('input', 66, 'f16') \n  "
+"port_label('input', 67, 'f17') \n  "
+"port_label('input', 68, 'f18') \n  "
+"port_label('input', 69, 'f19') \n  "
+"port_label('input', 70, 'f20') \n  "
+"port_label('input', 71, 'f21') \n  "
+"port_label('input', 72, 'f22') \n  "
+"port_label('input', 73, 'f23') \n  "
+"port_label('input', 74, 'f24') \n  "
+"port_label('input', 75, 'f25') \n  "
+"port_label('input', 76, 'f26') \n  "
+"port_label('input', 77, 'f27') \n  "
+"port_label('input', 78, 'f28') \n  "
+"port_label('input', 79, 'f29') \n  "
+"port_label('input', 80, 'f30') \n  "
+"port_label('input', 81, 'f31') \n  "
+"port_label('input', 82, 'f32') \n  "
+"port_label('input', 83, 'f33') \n  "
+"port_label('input', 84, 'f34') \n  "
+"port_label('input', 85, 'f35') \n  "
+"port_label('input', 86, 'f36') \n  "
+"port_label('input', 87, 'f37') \n  "
+"port_label('input', 88, 'f38') \n  "
+"port_label('input', 89, 'f39') \n  "
+"port_label('input', 90, 'f40') \n  "
+"port_label('input', 91, 'f41') \n  "
+"port_label('input', 92, 'f42') \n  "
+"port_label('input', 93, 'f43') \n  "
+"port_label('input', 94, 'f44') \n  "
+"port_label('input', 95, 'f45') \n  "
+"port_label('input', 96, 'f46') \n  "
+"port_label('input', 97, 'f47') \n  "
+"port_label('input', 98, 'f48') \n  "
+"port_label('input', 99, 'f49') \n  "
+"port_label('input', 100, 'f50') \n  "
+"port_label('input', 101, 'A01') \n  "
+"port_label('input', 102, 'A02') \n  "
+"port_label('input', 103, 'A03') \n  "
+"port_label('input', 104, 'A04') \n  "
+"port_label('input', 105, 'A05') \n  "
+"port_label('input', 106, 'A06') \n  "
+"port_label('input', 107, 'A07') \n  "
+"port_label('input', 108, 'A08') \n  "
+"port_label('input', 109, 'A09') \n  "
+"port_label('input', 110, 'A10') \n  "
+"port_label('input', 111, 'A11') \n  "
+"port_label('input', 112, 'A12') \n  "
+"port_label('input', 113, 'A13') \n  "
+"port_label('input', 114, 'A14') \n  "
+"port_label('input', 115, 'A15') \n  "
+"port_label('input', 116, 'A16') \n  "
+"port_label('input', 117, 'A17') \n  "
+"port_label('input', 118, 'A18') \n  "
+"port_label('input', 119, 'A19') \n  "
+"port_label('input', 120, 'A20') \n  "
+"port_label('input', 121, 'A21') \n  "
+"port_label('input', 122, 'A22') \n  "
+"port_label('input', 123, 'A23') \n  "
+"port_label('input', 124, 'A24') \n  "
+"port_label('input', 125, 'A25') \n  "
+"port_label('input', 126, 'A26') \n  "
+"port_label('input', 127, 'A27') \n  "
+"port_label('input', 128, 'A28') \n  "
+"port_label('input', 129, 'A29') \n  "
+"port_label('input', 130, 'A30') \n  "
+"port_label('input', 131, 'A31') \n  "
+"port_label('input', 132, 'A32') \n  "
+"port_label('input', 133, 'A33') \n  "
+"port_label('input', 134, 'A34') \n  "
+"port_label('input', 135, 'A35') \n  "
+"port_label('input', 136, 'A36') \n  "
+"port_label('input', 137, 'A37') \n  "
+"port_label('input', 138, 'A38') \n  "
+"port_label('input', 139, 'A39') \n  "
+"port_label('input', 140, 'A40') \n  "
+"port_label('input', 141, 'A41') \n  "
+"port_label('input', 142, 'A42') \n  "
+"port_label('input', 143, 'A43') \n  "
+"port_label('input', 144, 'A44') \n  "
+"port_label('input', 145, 'A45') \n  "
+"port_label('input', 146, 'A46') \n  "
+"port_label('input', 147, 'A47') \n  "
+"port_label('input', 148, 'A48') \n  "
+"port_label('input', 149, 'A49') \n  "
+"port_label('input', 150, 'A50') \n  "
+"port_label('input', 151, 'b01') \n  "
+"port_label('input', 152, 'b02') \n  "
+"port_label('input', 153, 'b03') \n  "
+"port_label('input', 154, 'b04') \n  "
+"port_label('input', 155, 'b05') \n  "
+"port_label('input', 156, 'b06') \n  "
+"port_label('input', 157, 'b07') \n  "
+"port_label('input', 158, 'b08') \n  "
+"port_label('input', 159, 'b09') \n  "
+"port_label('input', 160, 'b10') \n  "
+"port_label('input', 161, 'b11') \n  "
+"port_label('input', 162, 'b12') \n  "
+"port_label('input', 163, 'b13') \n  "
+"port_label('input', 164, 'b14') \n  "
+"port_label('input', 165, 'b15') \n  "
+"port_label('input', 166, 'b16') \n  "
+"port_label('input', 167, 'b17') \n  "
+"port_label('input', 168, 'b18') \n  "
+"port_label('input', 169, 'b19') \n  "
+"port_label('input', 170, 'b20') \n  "
+"port_label('input', 171, 'b21') \n  "
+"port_label('input', 172, 'b22') \n  "
+"port_label('input', 173, 'b23') \n  "
+"port_label('input', 174, 'b24') \n  "
+"port_label('input', 175, 'b25') \n  "
+"port_label('input', 176, 'b26') \n  "
+"port_label('input', 177, 'b27') \n  "
+"port_label('input', 178, 'b28') \n  "
+"port_label('input', 179, 'b29') \n  "
+"port_label('input', 180, 'b30') \n  "
+"port_label('input', 181, 'b31') \n  "
+"port_label('input', 182, 'b32') \n  "
+"port_label('input', 183, 'b33') \n  "
+"port_label('input', 184, 'b34') \n  "
+"port_label('input', 185, 'b35') \n  "
+"port_label('input', 186, 'b36') \n  "
+"port_label('input', 187, 'b37') \n  "
+"port_label('input', 188, 'b38') \n  "
+"port_label('input', 189, 'b39') \n  "
+"port_label('input', 190, 'b40') \n  "
+"port_label('input', 191, 'b41') \n  "
+"port_label('input', 192, 'b42') \n  "
+"port_label('input', 193, 'b43') \n  "
+"port_label('input', 194, 'b44') \n  "
+"port_label('input', 195, 'b45') \n  "
+"port_label('input', 196, 'b46') \n  "
+"port_label('input', 197, 'b47') \n  "
+"port_label('input', 198, 'b48') \n  "
+"port_label('input', 199, 'b49') \n  "
+"port_label('input', 200, 'b50') \n  "
+"port_label('input', 201, 'C01') \n  "
+"port_label('input', 202, 'C02') \n  "
+"port_label('input', 203, 'C03') \n  "
+"port_label('input', 204, 'C04') \n  "
+"port_label('input', 205, 'C05') \n  "
+"port_label('input', 206, 'C06') \n  "
+"port_label('input', 207, 'C07') \n  "
+"port_label('input', 208, 'C08') \n  "
+"port_label('input', 209, 'C09') \n  "
+"port_label('input', 210, 'C10') \n  "
+"port_label('input', 211, 'C11') \n  "
+"port_label('input', 212, 'C12') \n  "
+"port_label('input', 213, 'C13') \n  "
+"port_label('input', 214, 'C14') \n  "
+"port_label('input', 215, 'C15') \n  "
+"port_label('input', 216, 'C16') \n  "
+"port_label('input', 217, 'C17') \n  "
+"port_label('input', 218, 'C18') \n  "
+"port_label('input', 219, 'C19') \n  "
+"port_label('input', 220, 'C20') \n  "
+"port_label('input', 221, 'C21') \n  "
+"port_label('input', 222, 'C22') \n  "
+"port_label('input', 223, 'C23') \n  "
+"port_label('input', 224, 'C24') \n  "
+"port_label('input', 225, 'C25') \n  "
+"port_label('input', 226, 'C26') \n  "
+"port_label('input', 227, 'C27') \n  "
+"port_label('input', 228, 'C28') \n  "
+"port_label('input', 229, 'C29') \n  "
+"port_label('input', 230, 'C30') \n  "
+"port_label('input', 231, 'C31') \n  "
+"port_label('input', 232, 'C32') \n  "
+"port_label('input', 233, 'C33') \n  "
+"port_label('input', 234, 'C34') \n  "
+"port_label('input', 235, 'C35') \n  "
+"port_label('input', 236, 'C36') \n  "
+"port_label('input', 237, 'C37') \n  "
+"port_label('input', 238, 'C38') \n  "
+"port_label('input', 239, 'C39') \n  "
+"port_label('input', 240, 'C40') \n  "
+"port_label('input', 241, 'C41') \n  "
+"port_label('input', 242, 'C42') \n  "
+"port_label('input', 243, 'C43') \n  "
+"port_label('input', 244, 'C44') \n  "
+"port_label('input', 245, 'C45') \n  "
+"port_label('input', 246, 'C46') \n  "
+"port_label('input', 247, 'C47') \n  "
+"port_label('input', 248, 'C48') \n  "
+"port_label('input', 249, 'C49') \n  "
+"port_label('input', 250, 'D01') \n  "
+"port_label('input', 251, 'D02') \n  "
+"port_label('input', 252, 'D03') \n  "
+"port_label('input', 253, 'D04') \n  "
+"port_label('input', 254, 'D05') \n  "
+"port_label('input', 255, 'D06') \n  "
+"port_label('input', 256, 'D07') \n  "
+"port_label('input', 257, 'D08') \n  "
+"port_label('input', 258, 'D09') \n  "
+"port_label('input', 259, 'D10') \n  "
+"port_label('input', 260, 'D11') \n  "
+"port_label('input', 261, 'D12') \n  "
+"port_label('input', 262, 'D13') \n  "
+"port_label('input', 263, 'D14') \n  "
+"port_label('input', 264, 'D15') \n  "
+"port_label('input', 265, 'D16') \n  "
+"port_label('input', 266, 'D17') \n  "
+"port_label('input', 267, 'D18') \n  "
+"port_label('input', 268, 'D19') \n  "
+"port_label('input', 269, 'D20') \n  "
+"port_label('input', 270, 'D21') \n  "
+"port_label('input', 271, 'D22') \n  "
+"port_label('input', 272, 'D23') \n  "
+"port_label('input', 273, 'D24') \n  "
+"port_label('input', 274, 'D25') \n  "
+"port_label('input', 275, 'D26') \n  "
+"port_label('input', 276, 'D27') \n  "
+"port_label('input', 277, 'D28') \n  "
+"port_label('input', 278, 'D29') \n  "
+"port_label('input', 279, 'D30') \n  "
+"port_label('input', 280, 'D31') \n  "
+"port_label('input', 281, 'D32') \n  "
+"port_label('input', 282, 'D33') \n  "
+"port_label('input', 283, 'D34') \n  "
+"port_label('input', 284, 'D35') \n  "
+"port_label('input', 285, 'D36') \n  "
+"port_label('input', 286, 'D37') \n  "
+"port_label('input', 287, 'D38') \n  "
+"port_label('input', 288, 'D39') \n  "
+"port_label('input', 289, 'D40') \n  "
+"port_label('input', 290, 'D41') \n  "
+"port_label('input', 291, 'D42') \n  "
+"port_label('input', 292, 'D43') \n  "
+"port_label('input', 293, 'D44') \n  "
+"port_label('input', 294, 'D45') \n  "
+"port_label('input', 295, 'D46') \n  "
+"port_label('input', 296, 'D47') \n  "
+"port_label('input', 297, 'D48') \n  "
+"port_label('input', 298, 'D49') \n  "
+"port_label('input', 299, 'D50') \n  "
+"port_label('input', 300, 'c02') \n  "
+"port_label('input', 301, 'c03') \n  "
+"port_label('input', 302, 'c04') \n  "
+"port_label('input', 303, 'c05') \n  "
+"port_label('input', 304, 'c06') \n  "
+"port_label('input', 305, 'c07') \n  "
+"port_label('input', 306, 'c08') \n  "
+"port_label('input', 307, 'c09') \n  "
+"port_label('input', 308, 'c10') \n  "
+"port_label('input', 309, 'c11') \n  "
+"port_label('input', 310, 'c12') \n  "
+"port_label('input', 311, 'c13') \n  "
+"port_label('input', 312, 'c14') \n  "
+"port_label('input', 313, 'c15') \n  "
+"port_label('input', 314, 'c16') \n  "
+"port_label('input', 315, 'c17') \n  "
+"port_label('input', 316, 'c18') \n  "
+"port_label('input', 317, 'c19') \n  "
+"port_label('input', 318, 'c20') \n  "
+"port_label('input', 319, 'c21') \n  "
+"port_label('input', 320, 'c22') \n  "
+"port_label('input', 321, 'c23') \n  "
+"port_label('input', 322, 'c24') \n  "
+"port_label('input', 323, 'c25') \n  "
+"port_label('input', 324, 'c26') \n  "
+"port_label('input', 325, 'c27') \n  "
+"port_label('input', 326, 'c28') \n  "
+"port_label('input', 327, 'c29') \n  "
+"port_label('input', 328, 'c30') \n  "
+"port_label('input', 329, 'c31') \n  "
+"port_label('input', 330, 'c32') \n  "
+"port_label('input', 331, 'c33') \n  "
+"port_label('input', 332, 'c34') \n  "
+"port_label('input', 333, 'c35') \n  "
+"port_label('input', 334, 'c36') \n  "
+"port_label('input', 335, 'c37') \n  "
+"port_label('input', 336, 'c38') \n  "
+"port_label('input', 337, 'c39') \n  "
+"port_label('input', 338, 'c40') \n  "
+"port_label('input', 339, 'c41') \n  "
+"port_label('input', 340, 'c42') \n  "
+"port_label('input', 341, 'c43') \n  "
+"port_label('input', 342, 'c44') \n  "
+"port_label('input', 343, 'c45') \n  "
+"port_label('input', 344, 'c46') \n  "
+"port_label('input', 345, 'c47') \n  "
+"port_label('input', 346, 'c48') \n  "
+"port_label('input', 347, 'c49') \n  "
+"port_label('input', 348, 'c50') \n  "
+"port_label('input', 349, 'minusA_times_x0') \n  "
+"port_label('output', 1, 'u0') \n "
+"if( exist('FORCES_PRO_Logo.jpg','file') ), image(imread('FORCES_PRO_Logo.jpg'),'center','on'); elseif( exist(['interface',filesep,'FORCES_PRO_Logo.jpg'],'file') ), image(imread(['interface',filesep,'FORCES_PRO_Logo.jpg']),'center','on'); elseif( exist(['mpcc',filesep,'interface',filesep,'FORCES_PRO_Logo.jpg'],'file') ), image(imread(['mpcc',filesep,'interface',filesep,'FORCES_PRO_Logo.jpg']),'center','on'); end \n "
+
+      }
+    }
+  }
+}

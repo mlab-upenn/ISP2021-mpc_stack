@@ -6,8 +6,8 @@ from scipy.linalg import expm
 
 class Model:
     def __init__(self):
-        self.x = State()
-        self.u = Input()
+        # self.x = State()
+        # self.u = Input()
         self.param = Params()
 
         self.c1_d_psi_double_dot = (self.param.m * self.param.mu / (self.param.I_z * (self.param.l_r + self.param.l_f)))
@@ -61,8 +61,6 @@ class Model:
 
     # Linearize the differential equations to get the A, B and g matrices
     def get_jacobian(self,x,u):
-        x = State()
-        u = Input()
         A = np.zeros((n_states,n_states))
         B = np.zeros((n_states,n_inputs))
         # X_dot
@@ -130,7 +128,7 @@ class Model:
         # v_s_dot
         B[10,2] = 1
 
-        g = self.get_f(x,u) - (A @ x.to_vec + B @ u.to_vec)
+        g = self.get_f(x,u) - (A @ x.to_vec() + B @ u.to_vec())
 
         return A,B,g
 
@@ -139,13 +137,13 @@ class Model:
         M = np.zeros((n_states + n_inputs + 1,n_states + n_inputs + 1))
         M[0:n_states,0:n_states] = A
         M[0:n_states,n_states:n_states+n_inputs] = B
-        M[0:n_states,n_states+n_inputs] = g
+        M[0:n_states,[n_states+n_inputs]] = g
 
         M_exp = expm(M * sampling_time)
 
         A_d = M_exp[0:n_states,0:n_states]
         B_d = M_exp[0:n_states,n_states:n_states+n_inputs]
-        g_d = M_exp[0:n_states,n_states+n_inputs]
+        g_d = M_exp[0:n_states,[n_states+n_inputs]]
 
         return A_d, B_d, g_d
     
