@@ -4,7 +4,7 @@ from visualization_msgs.msg import Marker
 from geometry_msgs.msg import Point
 from structs import *
 from scipy.interpolate import CubicSpline
-
+import casadi
 class Track:
     def __init__(self,filename):
 

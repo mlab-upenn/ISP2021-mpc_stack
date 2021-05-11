@@ -12,7 +12,7 @@ rospack = rospkg.RosPack()
 
 class Track_con_vis:
     def __init__(self):
-        self.track = Track(rospack.get_path('mpcc')+ '/data/Silverstone_map_waypoints.csv')
+        self.track = Track(rospack.get_path('mpcc')+ '/data/IMS_centerline.csv')
         self.constraints = Constraints()
         self.rate = rospy.Rate(10)
 

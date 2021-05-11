@@ -11,13 +11,11 @@ def centerline_publisher():
     pub = rospy.Publisher('centerline', Marker, queue_size=1)
     rospy.init_node('centerline_publisher',anonymous = True)
     rate = rospy.Rate(10)
-
-    data = np.genfromtxt(rospack.get_path('mpcc')+ '/data/Silverstone_map_waypoints.csv', delimiter=',')
-
+    
+    data = np.genfromtxt(rospack.get_path('mpcc')+ '/data/IMS_centerline.csv', delimiter=',')
     marker = Marker()
     marker.header.frame_id = "map"
     marker.header.stamp = rospy.Time.now()
-    # marker.ns = "vis_centerline"
     marker.id = 0
     marker.type = Marker.POINTS
     marker.action = Marker.ADD
@@ -30,7 +28,6 @@ def centerline_publisher():
     marker.pose.orientation.w = 1.0
     marker.scale.x = 0.3
     marker.scale.y = 0.3
-    # marker.scale.z = 0.01
     marker.color.a = 1.0 
     marker.color.r = 0.0
     marker.color.g = 1.0

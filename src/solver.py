@@ -3,7 +3,8 @@ from config import *
 import numpy as np
 from params import *
 import get_userid
-
+# import warnings
+# warnings.simplefilter("error")
 class Solver():
     def __init__(self):
         self.stages = MultistageProblem(no_of_stages)
@@ -49,7 +50,7 @@ class Solver():
 
         # solver settings
         self.stages.codeoptions['name'] = 'mpcc'
-        self.stages.codeoptions['printlevel'] = 0
+        self.stages.codeoptions['printlevel'] = 1
 
         self.stages.generateCode(get_userid.userid)
     
@@ -72,7 +73,16 @@ class Solver():
                 problem['c{:02d}'.format(i+1)] = -opt_stages[i+1].g
             problem['D{:02d}'.format(i+1)] = np.hstack((opt_stages[i+1].B,-np.eye(n_states)))
         
-        problem['minusA_times_x0'] = -(opt_stages[0].A @ x0.to_vec() + opt_stages[0].g)
+        try:
+            # print("A  ",opt_stages[0].A)
+            # print("x  ",x0.to_vec())
+            problem['minusA_times_x0'] = -(opt_stages[0].A @ x0.to_vec() + opt_stages[0].g)
+        except RuntimeWarning:
+            print("Invalid value")
+            print("A  ",opt_stages[0].A)
+            print("x  ",x0.to_vec())
+            print("g  ",opt_stages[0].g)
+
 
         [solverout, exitflag, info] = mpcc_py.mpcc_solve(problem)
         if (exitflag == 1):

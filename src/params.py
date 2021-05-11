@@ -2,96 +2,68 @@ import numpy as np
 from config import *
 class Params:
     def __init__(self):
-        self.mu = 1.0489        #Friction coefficient
-        self.m = 3.47           #Mass of the car
-        self.I_z = 0.04712      #Moment of inertia
-        self.l_r = 0.17145      #Length from rear axle to Center of gravity
-        self.l_f = 0.15875      #Length from front axle to Center of gravity
-        self.C_sf = 4.718       #Cornering stiffness front
-        self.C_sr = 5.4562      #Cornering stiffness rear
-        self.h_cg = 0.074       #Height of center of gravity
-        self.g = 9.81           #Gravity
+        self.mu = 1.0489                # Friction coefficient
+        self.m = 3.47                   # Mass of the car
+        self.I_z = 0.04712              # Moment of inertia
+        self.l_r = 0.17145              # Length from rear axle to Center of gravity
+        self.l_f = 0.15875              # Length from front axle to Center of gravity
+        self.C_sf = 4.718               # Cornering stiffness front
+        self.C_sr = 5.4562              # Cornering stiffness rear
+        self.h_cg = 0.074               # Height of center of gravity
+        self.g = 9.81                   # Gravity
 
-        self.init_vel = 1
-        self.init_psi = 0
-        
-        self.Q_cross = 1
-        self.Q_cross_N = 1
-        self.Q_lag = 5
-        self.Q_lag_N = 5
-        self.Q_v_s = 0.02
+        self.s_init_vel = 0.0001        # Initial progress velocity
+        self.init_vel = 0.0001          # Initial velocity
 
-        # self.R_dv_delta = 0.00001
-        # self.R_da_long = 0.00001
-        # self.R_dv_s = 0.00001
-        self.R_dv_delta = 0.00001
-        self.R_da_long = 0.1
-        self.R_dv_s = 0.00001
+        self.Q_cont = 3                 # Quadratic cost for the Contouring error
+        self.Q_cont_N = 100             # Terminal Quadratic cost for the Contouring error
+        self.Q_lag = 5                  # Quadratic cost for the Lag error
+        self.Q_lag_N = 100              # Terminal Quadratic cost for the Lag error
+        self.Q_v_s = 10*sampling_time   # Scaling factor for the progress
+        self.Q_psi = 0                  # Quadratic cost for the Heading error
+        self.q_psi = 0                  # Linear cost for the Heading error
 
+        # Costs for the inputs
+        self.R_dv_delta = 0.000001
+        self.R_a_long = 0.000001
+        self.R_dv_s = 0.000001
+
+        # Regenerate the solver interface file on changing the below bounds
+        # Upper bound for the states
         self.X_ub = 100
         self.Y_ub = 100
-        self.delta_ub = 0.34
-        self.v_ub = 11
-        self.psi_ub = 3.14
-        self.psi_dot_ub =  3.2
-        self.beta_ub = 3.14/90
+        self.delta_ub = 3.14/4
+        self.v_ub = 7
+        self.psi_ub = 10
+        self.psi_dot_ub =  20
+        self.beta_ub = 3.14/45
         self.s_ub = 500
-        self.v_delta_ub = 3.2
-        self.a_long_ub = 7.51
         self.v_s_ub = 7
+        self.v_delta_ub = 3.2
 
+        # Lower bound for the states
         self.X_lb = -100
         self.Y_lb = -100
-        self.delta_lb = -0.34
-        self.v_lb = -5
-        self.psi_lb = -3.14
-        self.psi_dot_lb = -3.2
-        self.beta_lb = -3.14/90
+        self.delta_lb = -3.14/4
+        self.v_lb = 0
+        self.psi_lb = -10
+        self.psi_dot_lb = -20
+        self.beta_lb = -3.14/45
         self.s_lb = 0
-        self.v_delta_lb = -3.2
-        self.a_long_lb = -7.51
         self.v_s_lb = 0
+        self.v_delta_lb = -3.2
+        
+        # Upper bound for the inputs
+        self.dv_delta_ub = 10
+        self.a_long_ub = 7.51
+        self.dv_s_ub = 7.51
 
-        self.dv_delta_ub = 5
-        self.da_long_ub = 10
-        self.dv_s_ub = 100
-
-        self.dv_delta_lb = -5
-        self.da_long_lb = -10
-        self.dv_s_lb = -100
-
-        # self.X_ub = 100
-        # self.Y_ub = 100
-        # self.delta_ub = np.pi/4
-        # self.v_ub = 5
-        # self.psi_ub = 2 * 3.14
-        # self.psi_dot_ub =  1000
-        # self.beta_ub = 3.14
-        # self.s_ub = 10000
-        # self.v_delta_ub = 10000
-        # self.a_long_ub = 10000
-        # self.v_s_ub = 10000
-
-        # self.X_lb = -100
-        # self.Y_lb = -100
-        # self.delta_lb = -np.pi/4
-        # self.v_lb = -5
-        # self.psi_lb = 0
-        # self.psi_dot_lb = -10000
-        # self.beta_lb = 0
-        # self.s_lb = 0
-        # self.v_delta_lb = -10000
-        # self.a_long_lb = -10000
-        # self.v_s_lb = -10000
-
-        # self.dv_delta_ub = 10000
-        # self.da_long_ub = 10000
-        # self.dv_s_ub = 10000
-
-        # self.dv_delta_lb = -10000
-        # self.da_long_lb = -10000
-        # self.dv_s_lb = -10000
+        # Lower bound for the inputs
+        self.dv_delta_lb = -10
+        self.a_long_lb = -7.51
+        self.dv_s_lb = -7.51    
     
+    # Return the state upper bounds in a vector form
     def get_state_ub(self):
         ub = np.zeros((n_states))
         ub[0] = self.X_ub
@@ -102,11 +74,11 @@ class Params:
         ub[5] = self.psi_dot_ub
         ub[6] = self.beta_ub
         ub[7] = self.s_ub
-        ub[8] = self.v_delta_ub
-        ub[9] = self.a_long_ub
-        ub[10] = self.v_s_ub
+        ub[8] = self.v_s_ub
+        ub[9] = self.v_delta_ub
         return ub
     
+    # Return the state lower bounds in a vector form
     def get_state_lb(self):
         lb = np.zeros((n_states))
         lb[0] = self.X_lb
@@ -117,21 +89,22 @@ class Params:
         lb[5] = self.psi_dot_lb
         lb[6] = self.beta_lb
         lb[7] = self.s_lb
-        lb[8] = self.v_delta_lb
-        lb[9] = self.a_long_lb
-        lb[10] = self.v_s_lb
+        lb[8] = self.v_s_lb
+        lb[9] = self.v_delta_lb
         return lb
     
+    # Return the input upper bounds in a vector form
     def get_input_ub(self):
         ub = np.zeros((n_inputs))
         ub[0] = self.dv_delta_ub
-        ub[1] = self.da_long_ub
+        ub[1] = self.a_long_ub
         ub[2] = self.dv_s_ub
         return ub
 
+    # Return the input lower bounds in a vector form
     def get_input_lb(self):
         lb = np.zeros((n_inputs))
         lb[0] = self.dv_delta_lb
-        lb[1] = self.da_long_lb
+        lb[1] = self.a_long_lb
         lb[2] = self.dv_s_lb
         return lb
