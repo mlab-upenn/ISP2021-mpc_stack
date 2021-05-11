@@ -1,35 +1,49 @@
-# ISP2021-mpc_stack
-This is the github project for the F1Tenth Independent Study Projects 2021. In this project we are focusing on the development of a an MPC stack for the F1TENTH car.
+# MPCC
 
 ## Requirements
-- Linux Ubuntu (tested on versions XX.XX and XX.XX)
-- Python 3.XX.
-- ....
+- Linux Ubuntu (tested on versions 20.04)
+- ROS Noetic
+- FORCESPRO
+- F1tenth ROS simulator
 
 ## Installation
-Use the provided `requirements.txt` in the root directory of this repo, in order to install all required modules.\
-`pip3 install -r /path/to/requirements.txt`
+- FORCESPRO solver. Refer the documentation https://forces.embotech.com/Documentation/
+- ![F1tenth simulator](https://github.com/f1tenth/f1tenth_simulator)
 
-
-The code is developed with Python 3.XX.
 
 ## Running the code
-* `Step 1:` In step 1 you need to do this and that...
-* `Step 2:` In step 2 you have to do the following...
-* `Step 3:` ....
-
+- Generate the solver file using mpcc.py file by uncommenting line number 75
+- Run the launch file as
+```
+$ roslaunch mpcc mpcc.launch
+```
+- Run the MPCC Controller node
+```
+$ rosrun mpcc ros_mpcc.py
+```
 
 
 ## Folder Structure
 
-All main scripts depend on the following subfolders:
-
-1. Folder 1 contains the files for xxx...
-2. Folder 2 contains the files for...
+1. src contains the main scripts
+2. data consists of the centerline files of the racetracks
 
 
 ## Files
 | File | Description |
 |----|----|
-main.py   | Is used to start the algorithm
-test.py | Is used to create the results
+ros_mpcc.py   | The ROS NOde 
+mpcc.py | Main file which runs the solver
+model.py | Contains the dynamics of the model
+cost.py | Contains the cost function
+constraints.py | Halfspace track constraints
+track.py | Spline fitting of the centerline
+params.py | Contains Model, Cost and Constraints bounds
+config.py | Number of stages and sampling time
+structs.py | Struct objects such as State and Input
+solver.py | Low level interface for the FORCESPRO solver
+centerline_publisher.py | ROS node to publish the centerline marker msg
+track_constraint_pub.py | ROS node to publish the halfspace track constraints marker msg
+
+## Demo on IMS racetrack
+![](https://github.com/mlab-upenn/ISP2021-mpc_stack/blob/mpcc/gifs/demo_mpcc.gif)
