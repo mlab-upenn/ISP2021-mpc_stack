@@ -47,6 +47,6 @@ PredictiveModel.py | This file contains the implementation for determnation of t
 PID_states.npz | Numpy file which contains the PID controller determined state and input values
 
 ## Demo on IMS racetrack
-<!-- ![Refer to this Youtube link](https://youtu.be/S3I64Jzw--Y) -->
+Video sped up 5x to ensure the simulator frequency is similar to real world frequency 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=S3I64Jzw--Y
 " target="_blank"><img src="http://img.youtube.com/vi/S3I64Jzw--Y/0.jpg"></a>
