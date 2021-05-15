@@ -6,7 +6,7 @@ This is the repository for the LMPC implementation on the F1TENTH Gym environmen
 - Linux Ubuntu (tested on versions 20.04)
 - Python 3.8.5
 - F1TENTH Gym Simulator
-- OSQP solver [(Install from here)](https://osqp.org/docs/get_started/sources.html)
+- OSQP solver [(Install from here)](https://osqp.org/docs/get_started/python.html)
 
 The documentation of the simulation environment can be found [here](https://f1tenth-gym.readthedocs.io/en/latest/).
 
