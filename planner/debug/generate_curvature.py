@@ -43,8 +43,8 @@ diff_args = np.argsort(np.abs(a_new[:,5]-105))
 # curv = ((105-a_new[diff_args[0],5])/(a_new[diff_args[1],5] - a_new[diff_args[0],5]))\
 #                 *(a_new[diff_args[1],4] - a_new[diff_args[0],4]) + a_new[diff_args[0],4]
 # print(curv)
-# np.savetxt("IMS_map_waypoints.csv", a_new, delimiter=",")
+np.savetxt("IMS_map_waypoints.csv", a_new, delimiter=",")
 
-# plt.plot(a_new[:,0],a_new[:,1])
-# plt.plot(b[:,1],b[:,2])
-# plt.show()
+plt.plot(a_new[:,0],a_new[:,1])
+plt.plot(b[:,1],b[:,2])
+plt.show()
