@@ -47,7 +47,7 @@ PredictiveModel.py | This file contains the implementation for determnation of t
 PID_states.npz | Numpy file which contains the PID controller determined state and input values
 
 ## Demo on IMS racetrack
-![Refer to this Google Drive link](https://drive.google.com/file/d/1OYTzROvC-OkJf8rAm6VVvPmjtx9mfA9g/view?usp=sharing)
+![Refer to this Youtube link](https://youtu.be/S3I64Jzw--Y)
 
 <!-- ## Citing
 If you find this Gym environment useful, please consider citing:
