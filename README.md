@@ -11,10 +11,10 @@ This is the repository for the LMPC implementation on the F1TENTH Gym environmen
 The documentation of the simulation environment can be found [here](https://f1tenth-gym.readthedocs.io/en/latest/).
 
 ## Install the simulator using:
+This algorithm uses a modified version og the Gym simulator
 **You can install the environment by running**
 
 ```bash
-$ git clone https://github.com/f1tenth/f1tenth_gym.git
 $ cd f1tenth_gym
 $ git checkout exp_py
 $ pip3 install --user -e gym/
