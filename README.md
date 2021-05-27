@@ -19,23 +19,12 @@ The first controller of the stack is Hierarchical Model Predictive Control (HMPC
 
 More details on the gym installation can be found [here](https://f1tenth-gym.readthedocs.io/en/latest/index.html)
 
-## Running the code
-* `Step 1:` In step 1 you need to do this and that...
-* `Step 2:` In step 2 you have to do the following...
-* `Step 3:` ....
+## Running the code - HMPC
+* `Step 1:` Download the HMPC.py
+* `Step 2:` Put HMPC.py into the `example` directory of the gym folder
+* `Step 3:` The controller can be run by:
+`cd examples`
+`python3 HMPC.py`
 
 
 
-## Folder Structure
-
-All main scripts depend on the following subfolders:
-
-1. Folder 1 contains the files for xxx...
-2. Folder 2 contains the files for...
-
-
-## Files
-| File | Description |
-|----|----|
-main.py   | Is used to start the algorithm
-test.py | Is used to create the results
