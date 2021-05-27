@@ -1,10 +1,12 @@
 # ISP2021-mpc_stack
 This is the github project for the F1Tenth Independent Study Projects 2021. In this project we are focusing on the development of a an MPC stack for the F1TENTH car.
 
+The first controller of the stack is Hierarchical Model Predictive Control (HMPC) which has a high-level planner to generate a reference trajectory and uses a low-level MPC to optimall drive the car to track that trajectory. The high-level planner uses the idea of capturing the forthcoming track contour to estimate how much the car needs to re-orient itself in the future such that it would stay parallel to the track. Since there is a direct relationship between steering angle and the car's change in orientation, the controller can thus compute the appropriate steering angle for the car given the track configuration ahead. Additionally, because the controller knows the track contour ahead, it can detect sharp corners and, from there, control the car speed appropriately. After the appropriate steering angle and speed have been determined, they are then fixed to generate a reference trajectory that can optimally be tracked using the low-level MPC 
+
 ## Requirements
-- Linux Ubuntu (tested on versions XX.XX and XX.XX)
-- Python 3.XX.
-- ....
+- Linux Ubuntu 
+- Python 3
+- F1tenth gym 
 
 ## Installation
 Use the provided `requirements.txt` in the root directory of this repo, in order to install all required modules.\
