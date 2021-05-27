@@ -10,8 +10,11 @@ The first controller of the stack is Hierarchical Model Predictive Control (HMPC
 
 ## F1tenth Gym Installation
 `git clone https://github.com/f1tenth/f1tenth_gym.git`
+
 `cd f1tenth_gym`
+
 `git checkout exp_py`
+
 `pip3 install --user -e gym`
 
 More details on the gym installation can be found [here]('https://f1tenth-gym.readthedocs.io/en/latest/index.html')
