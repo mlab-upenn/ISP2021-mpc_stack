@@ -17,7 +17,7 @@ The first controller of the stack is Hierarchical Model Predictive Control (HMPC
 
 `pip3 install --user -e gym`
 
-More details on the gym installation can be found [here]('https://f1tenth-gym.readthedocs.io/en/latest/index.html')
+More details on the gym installation can be found [here](https://f1tenth-gym.readthedocs.io/en/latest/index.html)
 
 ## Running the code
 * `Step 1:` In step 1 you need to do this and that...
