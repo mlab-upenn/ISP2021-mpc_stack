@@ -23,7 +23,9 @@ More details on the gym installation can be found [here](https://f1tenth-gym.rea
 * `Step 1:` Download the HMPC.py
 * `Step 2:` Put HMPC.py into the `example` directory of the gym folder
 * `Step 3:` The controller can be run by:
+
 `cd examples`
+
 `python3 HMPC.py`
 
 
