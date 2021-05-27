@@ -8,12 +8,13 @@ The first controller of the stack is Hierarchical Model Predictive Control (HMPC
 - Python 3
 - F1tenth gym 
 
-## Installation
-Use the provided `requirements.txt` in the root directory of this repo, in order to install all required modules.\
-`pip3 install -r /path/to/requirements.txt`
+## F1tenth Gym Installation
+'git clone https://github.com/f1tenth/f1tenth_gym.git'
+'cd f1tenth_gym'
+'git checkout exp_py'
+'pip3 install --user -e gym'
 
-
-The code is developed with Python 3.XX.
+More details on the gym installation can be found [here]('https://f1tenth-gym.readthedocs.io/en/latest/index.html')
 
 ## Running the code
 * `Step 1:` In step 1 you need to do this and that...
